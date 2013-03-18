@@ -66,12 +66,17 @@ author = 'Your name goes here'
 
 # Development notes
 
-# I tried reading the xml files that Posterous export produces, but that did not work because the links
-# to images, audio and video are absolute. Finding local links afterwards is not simple.
+# The Posterous export file contains both xml and html versions of the blog.
 
-# The html files contain the correct local links, so that solves the problem with xml files,
-# but the html is invalid (several tags are not closed), and this messes up the etree parser.
-# The fixHtml() function takes care of fixing the html.
+# I tried to make this script process the xml files, but that did not work
+# because the links to images, audio and video files are absolute (pointing
+# to online resources). Finding links to the local media files afterwards
+# is not a simple task.
+
+# The html files do contain the correct local links, so that solves the
+# problem with absolute links in the xml files, but the html is invalid
+# (several tags are not closed), and this messes up the etree parser.
+# The fixHtml() function takes care of fixing those html issues.
 
 import re, os, sys, subprocess, cgi, time, shutil, html.parser
 from lxml import etree
