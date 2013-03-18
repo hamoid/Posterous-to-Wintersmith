@@ -10,7 +10,7 @@ Python script to migrate a Posterous blog to Wintersmith (a nodejs-based static 
 3. Unpack the downloaded file
 4. In the terminal, cd into the unpacked folder
 5. type: wintersmith new wintersmith
-   this will create a new wintersmith blog in a folder called wintersmith
+   This will create a new wintersmith blog in a folder called wintersmith
 6. type: git clone https://github.com/hamoid/Posterous-to-Wintersmith.git
 7. type: cd Posterous-to-Wintersmith
 8. type: ./convert.py
