@@ -54,6 +54,10 @@ simultaneous operations (mapLimit). I set a limit of 5. I haven't tested
 performance improvements when using higher (or lower) values. In theory, this is
 a script you will run once in your life.
 
+Update: Wintersmith 2.0 is coming: https://github.com/jnordberg/wintersmith/pull/100 
+It solves the issue I was having with too many files open, and it's MUCH faster
+building and previewing. It makes my changes to Wintersmith no longer necessary.
+
 
 # Development notes
 
